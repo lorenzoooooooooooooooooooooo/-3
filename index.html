@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trap Vibes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial Black', sans-serif;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a); /* sfondo scuro */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .button-container {
+      text-align: center;
+      animation: pulse 2s infinite;
+    }
+
+    h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      color: #f0db4f;
+      text-shadow: 2px 2px 10px #00ff88, 0px 0px 30px #ff0044;
+      margin-bottom: 50px;
+    }
+
+    .trap-button {
+      background: linear-gradient(45deg, #ff0044, #00ff88);
+      border: none;
+      border-radius: 10px;
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0px 0px 15px #ff0044, 0px 0px 25px #00ff88;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .trap-button:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 25px #ff0044, 0px 0px 50px #00ff88;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        text-shadow: 2px 2px 15px #ff0044, 0px 0px 30px #00ff88;
+      }
+      50% {
+        transform: scale(1.05);
+        text-shadow: 2px 2px 20px #ff0044, 0px 0px 40px #00ff88;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <h1>SEI GAY</h1>
+    <!-- Il pulsante ora apre la pagina "redirect.html" -->
+    <button class="trap-button" onclick="location.href='redirect.html'">CLICK ME</button>
+  </div>
+</body>
+</html>
